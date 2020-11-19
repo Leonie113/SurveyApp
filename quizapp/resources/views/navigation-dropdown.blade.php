@@ -1,3 +1,4 @@
+
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <style>
     h1{
@@ -7,7 +8,7 @@
         padding-top: 2%;
     }
 </style>
-
+<!--Fremdcode, einzelne Darstellung wurden eigenständig angepasst-->
 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

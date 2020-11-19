@@ -1,3 +1,4 @@
+<!--Fremdcode, einzelne Darstellung wurden eigenständig angepasst-->
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">

@@ -79,7 +79,7 @@
                         </div>
 
                         <div>
-                            <button class="btn btn-warning" type="submit">Complete Quiz</button>
+                            <button class="btn btn-warning" type="submit">Complete Survey</button>
                         </div>
                     </div>
                 </form>

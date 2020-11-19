@@ -43,7 +43,7 @@
 
 
 
-                            <a href="#"><button class="btn btn-dark">CREATE QUIZ</button></a>
+                            <a href="#"><button class="btn btn-dark">CREATE SURVEY</button></a>
                         </form>
                     </div>
                 </div>

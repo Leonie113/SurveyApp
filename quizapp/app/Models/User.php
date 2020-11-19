@@ -12,6 +12,8 @@ use Laravel\Sanctum\HasApiTokens;
 use App\Models\Quiz;
 
 class User extends Authenticatable
+
+//Fremdcode
 {
     use HasApiTokens;
     use HasFactory;

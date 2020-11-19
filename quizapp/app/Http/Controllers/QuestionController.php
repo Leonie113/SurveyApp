@@ -36,7 +36,7 @@ class QuestionController extends Controller
         return view('quiz.edit', compact('question', 'answers'));
     }
 
-    public function update(Request $request, Question $question, Answer $answer) {
+    public function update(Request $request, Question $question) {
         $question->update($request->all());
         return redirect()->route('quiz/show', ['quiz' => $question->quiz])
                         -> with('success', 'Question updated successfully');

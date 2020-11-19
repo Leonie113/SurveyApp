@@ -1,3 +1,4 @@
+<!--Fremdcode, einzelne Darstellung wurden eigenständig angepasst-->
 <html>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
@@ -6,6 +7,27 @@
             padding-left: 40%;
         }
     </style>
+    <script>
+        function testekennwortqualitaet(inhalt){
+            if (inhalt==""){
+                document.getElementById("security").innerHTML="keine Eingabe";
+                return;
+            }
+            if (window.XMLHttpRequest){
+                xmlhttp=new XMLHttpRequest();
+            }
+            else {
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                    document.getElementById("security").innerHTML=xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET","kennworttesten.php?q="+inhalt,true);
+            xmlhttp.send();
+        }
+    </script>
     <body>
 
         <x-guest-layout>
@@ -30,7 +52,8 @@
 
                     <div class="mt-4">
                         <x-jet-label for="password" value="{{ __('Password') }}" />
-                        <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
+                        <x-jet-input id="password" type="password" size="10" onkeyup="testekennwortqualitaet(this.value)" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
+                        <span id="security"></span>
                     </div>
 
                     <div class="mt-4">

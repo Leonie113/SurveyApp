@@ -19,8 +19,8 @@
                             We thank you for taking this survey. You can build your own survey or take other surveys on the home page.
                         </div>
                         <div class="card-footer">
-                            <a href="/quiz/create" ><button class="btn btn-sm btn-warning"">ADD NEW QUIZZES</button></a>
-                            <a href="/dashboard"><button class="btn btn-sm btn-dark">Dashboard</button></a>
+                            <a href="/quiz/create" ><button class="btn btn-sm btn-warning"">ADD NEW SURVEYS</button></a>
+                            <a href="/dashboard"><button class="btn btn-sm btn-dark">DASHBOARD</button></a>
                         </div>
                     </div>
                 </div>

@@ -20,7 +20,7 @@
                     <div class="card-header">{{ $quiz->title }}</div>
                     <div class="card-body">
                         <a class="btn btn-dark" href="/quiz/{{ $quiz->id }}/questions/create"> ADD QUESTIONS</a>
-                        <a class="btn btn-dark" href="/startquiz/{{ $quiz->id }}-{{ Str::slug($quiz->title) }}"> START QUIZ</a>
+                        <a class="btn btn-dark" href="/startquiz/{{ $quiz->id }}-{{ Str::slug($quiz->title) }}"> START SURVEY</a>
                     </div>
 
                 </div>

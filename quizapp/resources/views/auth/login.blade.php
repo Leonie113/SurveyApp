@@ -1,3 +1,4 @@
+<!--Fremdcode, einzelne Darstellung wurden eigenständig angepasst-->
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"><style>
     h1{
         text-align: center;
